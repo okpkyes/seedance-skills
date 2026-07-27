@@ -1,6 +1,6 @@
 ---
 name: seedance
-description: This skill should be used when the user asks to "generate video prompts", "create Seedance prompts", "write video descriptions", mentions "Seedance", "seedance", "即梦", "即梦平台", "视频提示词", "视频生成", "AI视频", "短剧", "广告视频", "视频延长", or discusses video prompt engineering, AI video generation, or Seedance 2.0 workflows.
+description: This skill should be used when the user asks to "generate video prompts", "create Seedance prompts", "write video descriptions", mentions "Seedance", "seedance", "即梦", "即梦平台", "视频提示词", "视频生成", "AI视频", "短剧", "广告视频", "视频延长", "真人三视图", "角色定档底图", "形象参考集", "输入素材", "定妆照", or discusses video prompt engineering, AI video generation, or Seedance 2.0 workflows.
 version: 2.0.0
 ---
 
@@ -1626,6 +1626,14 @@ X-Y秒：极力推荐，真实UGC质感
   - 强制合规：主体必须为成年人；占位年龄/性别一律先澄清或按成年人处理
   - 适用：电影级半脸/单眼特写、编辑摄影、博物馆级写实人像、documentary portrait
   - 触发词：半脸特写、单眼特写、极致特写、微距人像、eye close-up、超写实半脸、面部瑕疵可见
+
+#### 25. 真人三视图全身像（角色定档底图）
+
+- **定档底图模板**：`references/realperson-threeview-base.md`
+  - 包含：版式规范（左侧 50% 正面面部特写 + 右侧 正面/侧面/背面 全身三视图、纯白背景、细竖线分隔）、变量化基础提示词、候选词库、下游视频锚定配方
+  - 细节复用：皮肤质感 → `skin-texture-banks.md` + `anti-plastic-realism.md`；光影 → `portrait-lighting-banks.md` + `character-realism.md`；结构自检 → `portrait-prompt-philosophy.md`
+  - 适用：所有人物向作品（图生图、视频、换装、角色卡、短剧定妆）的统一输入素材 / turnaround sheet
+  - 触发词：真人三视图、三视图全身、角色定档图、形象参考集、输入素材、定妆照、人物素材底图、character sheet、model sheet、turnaround
 
 ---
 
